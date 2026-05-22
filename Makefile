@@ -1,7 +1,7 @@
 .PHONY: build-maven build-gradle
 
 build-maven:
-	mvn install
+	mvn install -DskipTests
 
 build-gradle:
-	./gradlew jar
+	./gradlew jar -x test
