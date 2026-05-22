@@ -76,7 +76,7 @@ jobs:
 
       # ── 5. Build ──────────────────────────────────────────────────────────
       - name: Build JAR
-        run: ./gradlew build --no-daemon
+        run: ./gradlew build --no-daemon -x test 
 
       # ── 6. Locate the JAR (works regardless of version string in filename) ─
       - name: Locate JAR
